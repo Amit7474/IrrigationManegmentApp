@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_person"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/WhiteText"
+            android:text="Please fill the details below:"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="16dp"
+            app:animationDuration="200"
+            app:borderColor="@color/WhiteText"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/SignUp_TXT_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:hint="First name"
+                android:textColorHint="@color/WhiteText"
+                android:textColor="@color/WhiteText" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="16dp"
+            app:animationDuration="200"
+            app:borderColor="@color/WhiteText"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/SignUp_TXT_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:hint="Phone number"
+                android:textColorHint="@color/WhiteText"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColor="@color/WhiteText" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SignUp_BTN_signup"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/poppins"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

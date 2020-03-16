@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "714577690981",
+    "firebase_url": "https://irrigation-management-app.firebaseio.com",
+    "project_id": "irrigation-management-app",
+    "storage_bucket": "irrigation-management-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714577690981:android:72314de412131f0ba1218c",
+        "android_client_info": {
+          "package_name": "com.example.irrigationmanegmentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714577690981-plhdo61itemobmv9irtaqvtq06of7vic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.irrigationmanegmentapp",
+            "certificate_hash": "edadd53bf613ffe7ce0766858cbb437ed3305343"
+          }
+        },
+        {
+          "client_id": "714577690981-4kjgmumg2f8cietkitqu4aec2715as50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7BbaWu5WnltlSd50BuVQyLLE1qzv38_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714577690981-4kjgmumg2f8cietkitqu4aec2715as50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

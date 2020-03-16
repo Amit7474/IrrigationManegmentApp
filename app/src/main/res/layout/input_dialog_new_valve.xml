@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="fill_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="New Valve"/>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="16dp"
+            app:animationDuration="200"
+            app:borderColor="@color/colorPrimaryDark"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/inputDialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:maxLength="9"
+                android:hint="Give your valve a name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <GridView
+            android:id="@+id/inputDialog_VEW_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:layout_margin="20dp"
+            android:horizontalSpacing="20dp"
+            android:numColumns="2"
+            android:verticalSpacing="20dp">
+
+
+        </GridView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

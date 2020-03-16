@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="Start Time"/>
+
+            <Button
+                android:id="@+id/ADFR_BTN_start"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textColor="@color/WhiteText"
+                android:fontFamily="@font/poppins"
+                android:text="hh : mm"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button_blue"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="15dp"
+                android:text="End Time"/>
+            <Button
+                android:id="@+id/ADFR_BTN_end"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textColor="@color/WhiteText"
+                android:fontFamily="@font/poppins"
+                android:text="hh : mm"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button_blue"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/ADFR_SP_days"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="select day"
+        app:textTint="@color/colorPrimary"
+        app:arrowTint="@color/colorPrimary"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:background="@drawable/rounded_button_blue"
+        android:layout_margin="16dp"/>
+
+
+    <Button
+        android:id="@+id/ADDFR_BTN_add"
+        android:text="Add new schadule"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/rounded_button_green"
+        android:layout_width="200dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
