@@ -3,12 +3,15 @@ package com.example.irrigationmanegmentapp;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -35,11 +38,11 @@ public class ProfileActivity extends AppCompatActivity {
     private FusedLocationProviderClient fusedLocationClient;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        setProfileAlready = false;
         //Get the last known location from Google-play Service
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
@@ -116,6 +119,7 @@ public class ProfileActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(Location location) {
                             if (location != null) {
+                                Log.i("Locationnnn:::", location.toString());
                                 //
                                 mWeatherAPIManager = new WeatherAPIManager(getApplicationContext(), weatherComponentsSetters, location.getLatitude(), location.getLongitude());
 

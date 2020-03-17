@@ -1,7 +1,10 @@
 package com.example.irrigationmanegmentapp;
 
+import android.Manifest;
 import android.animation.Animator;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -10,7 +13,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.deepan.pieprogress.PieProgress;
 
@@ -25,6 +32,7 @@ public class splashScreenActivity extends AppCompatActivity {
     private LinearLayout Splash_LAY_linear;
     private UserDBManager mUserDBManager;
     private int counter = 0;
+
 
 
     @Override
@@ -60,6 +68,8 @@ public class splashScreenActivity extends AppCompatActivity {
     private void init() {
         findViews();
         mUserDBManager = new UserDBManager(getApplicationContext());
+        //Request user's location
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
     }
 
     /**
